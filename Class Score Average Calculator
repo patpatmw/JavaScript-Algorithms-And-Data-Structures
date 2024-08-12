@@ -1,0 +1,19 @@
+function getAverage(scores) {
+    let sum=0;
+    let average=0;
+    let count=scores.length;
+ 
+    console.log("this is the array length"+count);
+    // Loop through the array and sum the values
+    for(let i=0;i<count;i++)
+    {sum+=scores[i];}
+   
+    console.log("this is the array sum"+sum);
+    // Calculate the average 
+    average=sum/count;
+    
+    return average;
+}
+
+console.log("average for first set:"+getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));
+console.log("average for second set:"+getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));
